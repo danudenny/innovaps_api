@@ -43,7 +43,8 @@ paths:
   /categories:
     get:
       summary: Category
-      tags: []
+      tags:
+        - Category
       responses:
         '200':
           description: OK

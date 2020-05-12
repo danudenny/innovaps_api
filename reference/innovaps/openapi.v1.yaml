@@ -58,15 +58,7 @@ paths:
         - Authorization: []
     parameters: []
 components:
-  schemas:
-    Pets:
-      title: Pets
-      description: A list of pets.
-      type: array
-      x-tags:
-        - Pets
-      items:
-        $ref: ./models/pet.v1.yaml
+  schemas: {}
   securitySchemes:
     Authorization:
       type: http

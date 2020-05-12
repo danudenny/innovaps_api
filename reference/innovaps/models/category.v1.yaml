@@ -1,0 +1,28 @@
+title: Category
+type: object
+description: Category of Product
+properties:
+  id:
+    type: integer
+  name:
+    type: string
+  banner:
+    type: string
+  icon:
+    type: string
+  featured:
+    type: integer
+  top:
+    type: integer
+  slug:
+    type: string
+  meta_title:
+    type: string
+  meta_description:
+    type: string
+required:
+  - id
+x-examples:
+  Example: {}
+x-tags:
+  - Category

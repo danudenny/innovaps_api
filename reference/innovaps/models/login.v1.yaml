@@ -1,0 +1,16 @@
+title: Login
+description: Login
+type: object
+xml:
+  name: Pet
+properties:
+  username:
+    type: string
+    example: doggie
+  password:
+    type: string
+required:
+  - username
+  - password
+x-tags:
+  - Auth

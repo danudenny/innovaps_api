@@ -57,6 +57,65 @@ paths:
       security:
         - Authorization: []
     parameters: []
+  /category/add:
+    post:
+      summary: ''
+      operationId: post-categories-add
+      responses:
+        '200':
+          description: OK
+      description: ''
+      tags:
+        - Category
+      security:
+        - Authorization: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                banner:
+                  type: string
+                icon:
+                  type: string
+                slug:
+                  type: string
+                meta_title:
+                  type: string
+                meta_description:
+                  type: string
+            examples:
+              Example:
+                value:
+                  name: string
+                  banner: string
+                  icon: string
+                  slug: string
+                  meta_title: string
+                  meta_description: string
+        description: Request Body Post Categories
+    parameters: []
+  '/category/{id}':
+    parameters:
+      - schema:
+          type: integer
+        name: id
+        in: path
+        required: true
+    get:
+      summary: ''
+      operationId: 'get-category-:id'
+      responses:
+        '200':
+          description: OK
+      description: ''
+      parameters: []
+      security:
+        - Authorization: []
+      requestBody: {}
 components:
   schemas: {}
   securitySchemes:
